@@ -46,8 +46,13 @@ namespace Lab4
                 }
                 else
                 {
-                    Console.WriteLine("деление на ноль!!!");
+                    Console.WriteLine("Деление на ноль!!!");
                 }
+            }
+            else if (oper == '^')
+            {
+                    total = Math.Pow(a, b);
+                    Console.WriteLine("Возведение " + a + " в степень " + b + " равно " + total + ".");
             }
             else
             {
