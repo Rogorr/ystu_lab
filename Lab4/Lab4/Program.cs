@@ -54,6 +54,11 @@ namespace Lab4
                     total = Math.Pow(a, b);
                     Console.WriteLine("Возведение " + a + " в степень " + b + " равно " + total + ".");
             }
+            else if (oper == '~')
+            {
+                total = Math.Pow(a, 1/b);
+                Console.WriteLine("Извлечение корня степени " + b + " из числа " + a + " равно " + total + ".");
+            }
             else
             {
                 Console.WriteLine("Неизвестный оператор.");
