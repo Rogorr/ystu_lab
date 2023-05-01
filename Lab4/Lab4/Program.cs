@@ -39,13 +39,24 @@ namespace Lab4
 
             else if (oper == '/')
             {
-                total = a / b;
-                Console.WriteLine("Деление " + a + " на " + b + " равно " + total + ".");
+                if (b != 0)
+                {
+                    total = a / b;
+                    Console.WriteLine("Деление " + a + " на " + b + " равно " + total + ".");
+                }
+                else
+                {
+                    Console.WriteLine("деление на ноль!!!");
+                }
             }
             else
             {
                 Console.WriteLine("Неизвестный оператор.");
             }
+
+
+
+
         }
     }
 }
